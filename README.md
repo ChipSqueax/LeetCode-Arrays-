@@ -44,3 +44,8 @@ So, first we apply XOR for all the elements in the list and then for all numbers
 * The indices lie in the range mentioned in the problem, the indices are sorted and the duplicate is one of the indices...what do we do?
 Of course, we search for the duplicate in the indices using Binary Search.
 If for any index mid, the number of elements > mid is > mid, then there definitely is a duplicate in the range from low to mid...else, the duplicate lies in the other range...
+
+### Find all duplicate numbers
+[Problem](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+
+* Same old trick of using the list itself as a hashmap. The corresponding index of a particular value is made negative and if we find that the value at a particular index is already negative, we know that it is a duplicate...
