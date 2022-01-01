@@ -27,3 +27,8 @@ So, first we apply XOR for all the elements in the list and then for all numbers
 * The list can be used as a hashmap and all the occured elements can be marked as negative. When iterating through the list, the indices which have positive elements haven't occured in the list.
 
 * If we are to use bit manipulation, we can set the num-th bit of a variable initially 0. This can be done by ORing (1 << num) with the variable. While iterating over the range n, if we find an unset bit, add that into the output list. [this is done by ANDing (1 << num) with the variable].
+
+### Single Number
+[Problem](https://leetcode.com/problems/single-number/)
+
+* The best solution uses bit manipulation (XOR). This problem is similar to Missing number and we can apply the same logic here. Every number performs XOR twice on the variable and only one number does it once...It is this number which gets stored in the variable.!
