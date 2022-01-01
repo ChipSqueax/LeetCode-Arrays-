@@ -20,3 +20,10 @@ Both solutions run at approximately O(n) but the second one had a slightly bette
 
 * A very cool solution is to use the XOR operation. Initially, a variable is 0. Performing XOR twice on the variable always results in 0. Note that XOR can be applied in any order on the variable...
 So, first we apply XOR for all the elements in the list and then for all numbers from 0 to n. Ideally, the variable should result in 0 but the missing number performs XOR only once so the variable has the value of the missing number.!!
+
+### Disappeared Numbers
+[Problem](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+
+* The list can be used as a hashmap and all the occured elements can be marked as negative. When iterating through the list, the indices which have positive elements haven't occured in the list.
+
+* If we are to use bit manipulation, we can set the num-th bit of a variable initially 0. This can be done by ORing (1 << num) with the variable. While iterating over the range n, if we find an unset bit, add that into the output list. [this is done by ANDing (1 << num) with the variable].
