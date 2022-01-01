@@ -37,3 +37,10 @@ So, first we apply XOR for all the elements in the list and then for all numbers
 [Problem](https://leetcode.com/problems/product-of-array-except-self/)
 
 * The problem can be reframed as follows: At every index, place the product of all elements to the left of the index and the product of all elements to the right of the index. So, we first traverse through the list from left to right and place the product of all left elements. Then we traverse through the list from right to left and place the product of all right elements. Then we multiply the products at each index to obtain the required output.
+
+### Duplicate number
+[Problem](https://leetcode.com/problems/find-the-duplicate-number/)
+
+* The indices lie in the range mentioned in the problem, the indices are sorted and the duplicate is one of the indices...what do we do?
+Of course, we search for the duplicate in the indices using Binary Search.
+If for any index mid, the number of elements > mid is > mid, then there definitely is a duplicate in the range from low to mid...else, the duplicate lies in the other range...
