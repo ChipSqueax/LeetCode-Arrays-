@@ -32,3 +32,8 @@ So, first we apply XOR for all the elements in the list and then for all numbers
 [Problem](https://leetcode.com/problems/single-number/)
 
 * The best solution uses bit manipulation (XOR). This problem is similar to Missing number and we can apply the same logic here. Every number performs XOR twice on the variable and only one number does it once...It is this number which gets stored in the variable.!
+
+### Product of array except self
+[Problem](https://leetcode.com/problems/product-of-array-except-self/)
+
+* The problem can be reframed as follows: At every index, place the product of all elements to the left of the index and the product of all elements to the right of the index. So, we first traverse through the list from left to right and place the product of all left elements. Then we traverse through the list from right to left and place the product of all right elements. Then we multiply the products at each index to obtain the required output.
