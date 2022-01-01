@@ -49,3 +49,10 @@ If for any index mid, the number of elements > mid is > mid, then there definite
 [Problem](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
 
 * Same old trick of using the list itself as a hashmap. The corresponding index of a particular value is made negative and if we find that the value at a particular index is already negative, we know that it is a duplicate...
+
+### Set matrix zeros
+[Problem](https://leetcode.com/problems/set-matrix-zeroes/)
+
+* We use the first row and the first column to store the zeros since these are the first cells to get filled anyway.
+We then iterate through the rest of the cells and check if the first cell in the corresponding row or the first cell in the corresponding column is 0 as recorded earlier...based on this, we set the cell to 0.
+But what if the first row and the first column themselves need to be set to 0s? To handle this, initially we store two booleans and after handling the rest of the cells, we handle the first row and first column through these booleans. 
