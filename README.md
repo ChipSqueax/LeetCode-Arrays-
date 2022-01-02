@@ -56,3 +56,11 @@ If for any index mid, the number of elements > mid is > mid, then there definite
 * We use the first row and the first column to store the zeros since these are the first cells to get filled anyway.
 We then iterate through the rest of the cells and check if the first cell in the corresponding row or the first cell in the corresponding column is 0 as recorded earlier...based on this, we set the cell to 0.
 But what if the first row and the first column themselves need to be set to 0s? To handle this, initially we store two booleans and after handling the rest of the cells, we handle the first row and first column through these booleans. 
+
+### Spiral Matrix
+[Problem](https://leetcode.com/problems/spiral-matrix/)
+
+* This is the most pythonic way of doing it. The first row of the matrix contains elements in the order that they are to be presented in the output. Then the remaining matrix is rotated 90 degrees counter-clockwise and the first row is added to the output and the process continues....till the matrix is not empty
+
+* This solution is a more naive solution where we traverse through the elements in the matrix in a spiral manner and reduce the boundaries throughout the traversal.
+
