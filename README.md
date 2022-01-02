@@ -70,3 +70,10 @@ This is the most pythonic way of doing it. The first row of the matrix contains 
 
 * First, reverse the matrix vertically and reverse the elements along the diagonal.
 
+### Longest Consecutive Sequence
+[Problem](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+* We first convert the list to a set which takes O(n) time. This is because, a set does not store duplicates and we can check if an element exists in a set in O(1) time.
+We loop through each element in the set and find the end of the sequence starting from each element. the length of this sequence would be end - start + 1. We need to find the largest of such lengths.
+To improve the algorithm, consider only the least number in each sequence, that is, ignore an element if an element lesser than it already exists in the set.
+
