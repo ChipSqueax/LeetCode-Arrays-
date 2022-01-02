@@ -60,7 +60,13 @@ But what if the first row and the first column themselves need to be set to 0s? 
 ### Spiral Matrix
 [Problem](https://leetcode.com/problems/spiral-matrix/)
 
-* This is the most pythonic way of doing it. The first row of the matrix contains elements in the order that they are to be presented in the output. Then the remaining matrix is rotated 90 degrees counter-clockwise and the first row is added to the output and the process continues....till the matrix is not empty
+* P.S. This solution was presented by Stefan Pochamann in the Leetcode discuss section.
+This is the most pythonic way of doing it. The first row of the matrix contains elements in the order that they are to be presented in the output. Then the remaining matrix is rotated 90 degrees counter-clockwise and the first row is added to the output and the process continues....till the matrix is not empty.
 
 * This solution is a more naive solution where we traverse through the elements in the matrix in a spiral manner and reduce the boundaries throughout the traversal.
+
+### Rotate matrix
+[Problem](https://leetcode.com/problems/rotate-image/)
+
+* First, reverse the matrix vertically and reverse the elements along the diagonal.
 
