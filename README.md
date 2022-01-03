@@ -77,3 +77,9 @@ This is the most pythonic way of doing it. The first row of the matrix contains 
 We loop through each element in the set and find the end of the sequence starting from each element. the length of this sequence would be end - start + 1. We need to find the largest of such lengths.
 To improve the algorithm, consider only the least number in each sequence, that is, ignore an element if an element lesser than it already exists in the set.
 
+### First Missing Positive
+[Problem](https://leetcode.com/problems/first-missing-positive/)
+
+* First, add a dummy 0 to the list and then remove all dummies (negatives and positive numbers greater than the length of the list) because we cannot record them in the same list.
+Next start recording every valid element in the list by making their corresponding index as -1. Use the 0th index for storing intermediate values. Next, loop through the elements from index 1 to the end. The first index which does not have 1 is the first positive value.! 
+
